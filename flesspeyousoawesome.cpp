@@ -24,4 +24,6 @@ return {
 "niiilllexe",
 "Pamparam223",
 "Respawn_User",
-"zq2te"}
+"zq2te",
+"klaviaturawasdBan",
+"RacBotSpectate3242"}
