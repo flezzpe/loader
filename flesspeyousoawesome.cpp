@@ -1,6 +1,27 @@
-local myproblem = {
-  'klaviaturawasdBan',
-  'RacBotSpectate3242'
-}
-
-return myproblem
+return {
+"sfdweasf",
+"ghj222111",
+"locality12345",
+"MIXA041209",
+"IrisBlac",
+"mamai7899",
+"CandyLol2333",
+"redqrk_LA",
+"lxz_firemax",
+"du1234seq",
+"YEGORRRR_228",
+"icamealive",
+"ebyprincesS_1",
+"Lolbro_671",
+"De_fault4",
+"Ilyaserk",
+"chickenchew_50000000",
+"xaker234356478",
+"xaker123321123",
+"Lolbro_6729",
+"fgiop102",
+"Zonerkaqq",
+"niiilllexe",
+"Pamparam223",
+"Respawn_User",
+"zq2te"}
