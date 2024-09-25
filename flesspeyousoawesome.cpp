@@ -1,5 +1,6 @@
 local myproblem = {
-  'klaviaturawasdBan'
+  'klaviaturawasdBan',
+  'RacBotSpectate3242'
 }
 
 return myproblem
