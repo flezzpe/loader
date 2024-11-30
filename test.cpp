@@ -1,3 +1,1 @@
-return function(script_key: string)
-    warn('wha:', script_key)
-end
+warn('recive:', script_key)
