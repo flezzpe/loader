@@ -1,32 +1,11 @@
-local TeleportService = cloneref(game:GetService('TeleportService'))
 local LocalPlayer = cloneref(game:GetService('Players')).LocalPlayer
 local HttpService = cloneref(game:GetService('HttpService'))
 
 local loader = setmetatable({
     _games = {
-        [1390601379] = {
-            name = 'Combat Warriors',
-            file = 'CombatWarriors.lua'
-        },
-
-        [4124008017] = {
-            name = 'Bridge Duels',
-            file = 'BridgeDuels.lua'
-        },
-
-        [4348829796] = {
-            name = 'MVSD',
-            file = 'MVSD.lua'
-        },
-
         [5750914919] = {
             name = 'Fisch',
             file = '8660176bbaa74f31f2118c61bb3a726d.lua'
-        },
-
-        [1430993116] = {
-            name = 'Baseplate',
-            file = 'Baseplate.lua'
         },
     },
 
@@ -50,20 +29,6 @@ local loader = setmetatable({
             local file_path = crashlogs_path .. '/' .. date .. '.txt'
             
             writefile(file_path, 'Error: ' .. tostring(respone))
-
-            if not messagebox then
-                return
-            end
-
-            local user_respone = messagebox(
-                'Nurysium error handler: ' .. tostring(respone) .. '\n\nPlease select the most appropriate download option from the options below.',
-                'Failed to load!',
-                1
-            )
-
-            if user_respone == 2 then
-                TeleportService:Teleport(game.PlaceId, LocalPlayer)
-            end
         end
     end
 }, loader)
