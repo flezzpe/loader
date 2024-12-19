@@ -14,11 +14,6 @@ local loader = setmetatable({
             file = 'BridgeDuels.lua'
         },
 
-        [4777817887] = {
-            name = 'Blade Ball',
-            file = 'f692041d990b18e451c692f6bf20a0d1.lua'
-        },
-
         [4348829796] = {
             name = 'MVSD',
             file = 'MVSD.lua'
