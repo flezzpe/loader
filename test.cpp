@@ -3,6 +3,11 @@ local HttpService = cloneref(game:GetService('HttpService'))
 
 local loader = setmetatable({
     _games = {
+        [6894451805] = {
+            name = 'BladeLeague',
+            file = '17b6c17981b8149e53c72f5a28183323.lua'
+        },
+
         [5750914919] = {
             name = 'Fisch',
             file = '8660176bbaa74f31f2118c61bb3a726d.lua'
