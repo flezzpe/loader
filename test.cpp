@@ -1,3 +1,7 @@
+if not cloneref then
+    return '[Nurysium] -> Security issue!'
+end
+
 local LocalPlayer = cloneref(game:GetService('Players')).LocalPlayer
 local HttpService = cloneref(game:GetService('HttpService'))
 
@@ -34,6 +38,8 @@ local loader = setmetatable({
             local file_path = crashlogs_path .. '/' .. date .. '.txt'
             
             writefile(file_path, 'Error: ' .. tostring(respone))
+
+            print(file_path, '@ [Something went wrong, an error log was created]')
         end
     end
 }, loader)
