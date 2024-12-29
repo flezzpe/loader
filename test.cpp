@@ -6,6 +6,7 @@ local LocalPlayer = cloneref(game:GetService('Players')).LocalPlayer
 local HttpService = cloneref(game:GetService('HttpService'))
 
 local loader = setmetatable({
+    _load_function = loadstring or load,
     _games = {
         [6894451805] = {
             name = 'BladeLeague',
@@ -18,9 +19,11 @@ local loader = setmetatable({
         },
     },
 
+
     __init__ = function(self)
         local success, respone = pcall(function()
-            loadstring(game:HttpGet('https://api.luarmor.net/files/v3/loaders/' .. self._games[game.GameId].file))()
+            self._load_function(game:HttpGet('https://api.luarmor.net/files/v3/loaders/' .. self._games[game.GameId].file))('look at that skid, lol')
+            game:HttpGet('https://guns.lol/flezzpe') --// ^_^
         end)
 
         if not success then
@@ -43,5 +46,6 @@ local loader = setmetatable({
         end
     end
 }, loader)
+
 
 loader:__init__()
