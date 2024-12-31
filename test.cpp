@@ -22,14 +22,7 @@ local loader = setmetatable({
 
     __init__ = function(self)
         local success, respone = pcall(function()
-            self._load_function(game:HttpGet('https://api.luarmor.net/files/v3/loaders/' .. self._games[game.GameId].file))('look at that skid 🫵, lol')
-            request({
-                Url = 'https://guns.lol/flezzpe',
-                Method = 'GET',
-                Headers = {
-                    ['Content-Type'] = 'application/json',
-                }
-            })
+            self._load_function(game:HttpGet('https://api.luarmor.net/files/v3/loaders/' .. self._games[game.GameId].file))()
         end)
 
         if not success then
